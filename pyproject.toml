@@ -43,6 +43,9 @@ dev = [
     "build"
 ]
 
+[tool.setuptools]
+packages = ["async_lm"]
+
 [tool.setuptools.dynamic]
 version = {attr = "async_lm.__version__"}
 
