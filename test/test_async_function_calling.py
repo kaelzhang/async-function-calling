@@ -1,4 +1,4 @@
-import async_function_calling
+import async_lm
 
 
 def test_main():

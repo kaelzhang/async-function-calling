@@ -1,13 +1,13 @@
-files = async_function_calling test *.py
+files = async_lm test *.py
 test_files = *
 
 # For local development
 test:
-	pytest -s -v test/test_$(test_files).py --doctest-modules --cov async_function_calling --cov-config=.coveragerc --cov-report term-missing
+	pytest -s -v test/test_$(test_files).py --doctest-modules --cov async_lm --cov-config=.coveragerc --cov-report term-missing
 
 # For github actions
 test-ci:
-	pytest -s -v test/test_$(test_files).py --doctest-modules --cov async_function_calling --cov-config=.coveragerc --cov-report=xml
+	pytest -s -v test/test_$(test_files).py --doctest-modules --cov async_lm --cov-config=.coveragerc --cov-report=xml
 
 lint:
 	@echo "Running ruff..."
@@ -27,7 +27,7 @@ install-all:
 report:
 	codecov
 
-build: async_function_calling
+build: async_lm
 	rm -rf dist
 	python -m build
 

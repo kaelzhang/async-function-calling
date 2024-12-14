@@ -3,14 +3,14 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "async-function-calling"
+name = "async-lm"
 authors = [
     {name = "Kael Zhang", email = "i+pypi@kael.me"}
 ]
 description = "Python implementation of the Asynchronous Function Calling"
 readme = "README.md"
 license = {file = "LICENSE"}
-keywords = ["async-function-calling", "function-calling"]
+keywords = ["async-function-calling", "function-calling", 'async-lm']
 classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Programming Language :: Python :: 3.7",
@@ -28,7 +28,7 @@ dynamic = ['version']
 dependencies = []
 
 [project.urls]
-Homepage = "https://github.com/kaelzhang/async-function-calling"
+Homepage = "https://github.com/kaelzhang/async-lm"
 
 [project.optional-dependencies]
 dev = [
@@ -44,10 +44,10 @@ dev = [
 ]
 
 [tool.setuptools.dynamic]
-version = {attr = "async_function_calling.__version__"}
+version = {attr = "async_lm.__version__"}
 
 [tool.setuptools.package-data]
-async_function_calling = ["py.typed"]
+async_lm = ["py.typed"]
 
 [tool.mypy]
 warn_return_any = true
