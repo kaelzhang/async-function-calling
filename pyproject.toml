@@ -3,14 +3,14 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "aioretry"
+name = "async-function-calling"
 authors = [
     {name = "Kael Zhang", email = "i+pypi@kael.me"}
 ]
 description = "Python implementation of the Asynchronous Function Calling"
 readme = "README.md"
 license = {file = "LICENSE"}
-keywords = ["aioretry"]
+keywords = ["async-function-calling", "function-calling"]
 classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Programming Language :: Python :: 3.7",
